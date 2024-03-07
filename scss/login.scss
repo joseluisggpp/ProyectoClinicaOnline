@@ -1,28 +1,47 @@
-@import "variables.scss";
 .login-container {
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
-  justify-content: center; // Centra el contenido horizontalmente
-  align-items: center; // Centra el contenido verticalmente si es necesario
-  min-height: 72vh; // Asegura una altura mínima para la sección de registro
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  min-height: 72vh; /* Asegurar una altura mínima para la sección */
   margin-top: 2rem;
 }
+
 .login-section,
 .info-section {
-  flex: 1;
-  padding: 1rem;
-  background: #21abf3; // Nuevo color de fondo
+  flex: 0 1 400px; /* No crecer, pero permitir encoger, y base de 400px */
+  padding: 2rem;
+  background: #21abf3;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra suave para las secciones
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 10px; /* Añadir algo de espacio entre los divs */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 100%; /* Use 100% del contenedor del padre */
+    max-width: 300px; /* Pero limita a 300px */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
 }
+
 @media only screen and (max-width: 619px) {
   .login-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 1 columna */
-    grid-gap: 70px; /* Espacio entre las tarjetas */
-    padding: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-section,
+  .info-section {
+    width: 90%; /* Hacer que los divs ocupen más espacio en móviles */
+    margin: 10px 0; /* Ajustar márgenes para la vista móvil */
   }
 }
