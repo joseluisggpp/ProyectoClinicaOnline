@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh; /* Esto hace que el contenedor tenga al menos el alto de la ventana del navegador */
+  flex-direction: column; /* Esto es opcional, por si también quieres centrar los elementos internos verticalmente */
+}
+
+.registration-section {
+  width: 100%;
+  max-width: 400px; /* Puedes ajustar esto al ancho deseado para tu formulario */
+  padding: 1rem;
+  background: #51adf6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  text-align: center;
+}
+.registration-section form {
+  padding: 1rem;
+}
+.registration-section form input {
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+}/*# sourceMappingURL=registro.css.map */

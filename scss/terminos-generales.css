@@ -1,0 +1,27 @@
+.terms-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+.terms-content h1 {
+  font-size: 2rem;
+  color: #2196f3;
+  margin-bottom: 1rem;
+}
+.terms-content p {
+  font-size: 1.5rem;
+  color: black;
+}
+.terms-content h2 {
+  font-size: 1.5rem;
+  color: #2196f3;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.terms-content section {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=terminos-generales.css.map */

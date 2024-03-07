@@ -1,0 +1,29 @@
+.login-container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 72vh;
+  margin-top: 2rem;
+}
+
+.login-section,
+.info-section {
+  flex: 1;
+  padding: 1rem;
+  background: #21abf3;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 619px) {
+  .login-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 columna */
+    grid-gap: 70px; /* Espacio entre las tarjetas */
+    padding: 70px;
+  }
+}/*# sourceMappingURL=login.css.map */

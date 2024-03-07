@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthstream</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/webp" href="./resource/img/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <!-- Pulsar el logo redirige al index.html -->
+      <a href="index.html" class="logo-link">
+        <img class="logo-img" alt="Healthstream" src="./resource/img/logoRecorteCircular.png" />
+      </a>
+      <audio id="welcome-audio" controls>
+        <source src="./resource/audio/Bienvenido.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      <div class="mobile-nav">
+        <button id="showBurger">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="-5 -5 60 60" fill="white">
+            <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </svg>
+        </button>
+        <div id="items-burger" class="mobile-nav-items">
+          <button id="closeBurger">
+            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+              <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+              </svg>
+          </button>
+          <ul>
+            <li><a href="./especialistas.html">Especialistas</a></li>
+            <li><a href="./especialidades.html">Especialidades</a></li>
+            <li><a href="./gestion-citas.html">Gestión de Citas</a></li>
+            <li><a href="./sala-videollamada.html">Sala de Videollamada</a></li>
+            <li><a href="./terminos-generales.html">Términos Generales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-header">
+        <!-- Botón de Modo Oscuro -->
+        <button id="dark-mode-toggle" class="btn btn-primary">Modo Oscuro</button>
+        <div class="search-box">
+          <input type="search" placeholder="Buscar..." />
+          <button class="btn btn-primary">Buscar</button>
+        </div>
+        <div>
+          <a href="login.html" class="href">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Botón de inicio de sesión omitido en la página de registro -->
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="./especialistas.html">Especialistas</a></li>
+        <li><a href="./especialidades.html">Especialidades</a></li>
+        <li><a href="./gestion-citas.html">Gestión de Citas</a></li>
+        <li><a href="./sala-videollamada.html">Sala de Videollamada</a></li>
+        <li><a href="./terminos-generales.html">Términos Generales</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido Principal Aquí -->
+    <main>
+      <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-content">
+          <h1>Bienvenido a Healthstream</h1>
+
+          <button id="enter-btn" class="btn btn-primary">Entrar</button>
+        </div>
+      </div>
+
+      <main class="main-content">
+        <div class="carrusel">
+          <div class="carrusel-item active" style="background-image: url('./resource/img/carrusel/carrusel1.jpg')">
+            <div class="carrusel-text">Bienvenido a Healthstream</div>
+          </div>
+          <div class="carrusel-item" style="background-image: url('./resource/img/carrusel/carrusel2.jpg')">
+            <div class="carrusel-text">Cuidado médico experto</div>
+          </div>
+          <div class="carrusel-item" style="background-image: url('./resource/img/carrusel/carrusel3.jpg')">
+            <div class="carrusel-text">Tu salud es nuestra prioridad</div>
+          </div>
+          <button id="prev" value="-1" class="carrusel-btn prev">&#10094;</button>
+          <button id="next" value="1" class="carrusel-btn next">&#10095;</button>
+        </div>
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Tu Salud en Manos Expertas</h1>
+          </br>
+            <p>Accede a los mejores especialistas médicos desde la comodidad de tu hogar.</p>
+          </br>
+            <a href="./gestion-citas.html" class="btn btn-primary">Reserva tu Cita</a>
+          </div>
+        </section>
+        <section class="our-specialists">
+          <h2>Conoce a Nuestros Especialistas</h2>
+          </br>
+          <div class="specialist-profiles">
+            <div class="especialista-card">
+              <img src="./resource/img/especialistas/Dra Antonia.jpg" alt="Dra. Antonia" class="especialista-img" />
+              <p class="especialista-nombre">Dra. Antonia</p>
+              <p class="especialista-especialidad">Medicina General</p>
+              <div class="ratings">
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella-gris">☆</span>
+              </div>
+            </div>
+            <div class="especialista-card">
+              <img src="./resource/img/especialistas/Dr Pepe.jpg" alt="Dr. Pepe" class="especialista-img" />
+              <p class="especialista-nombre">Dr. Pepe</p>
+              <p class="especialista-especialidad">Odontología</p>
+              <div class="ratings">
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella-gris">☆</span>
+              </div>
+            </div>
+            <div class="especialista-card">
+              <img src="./resource/img/especialistas/Dra Daniela.jpg" alt="Dra. Daniela" class="especialista-img" />
+              <p class="especialista-nombre">Dra. Daniela</p>
+              <p class="especialista-especialidad">Cardiología</p>
+              <div class="ratings">
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella">★</span>
+                <span class="estrella-gris">☆</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <h2>Lo que Dicen Nuestros Pacientes</h2>
+          <div class="testimonial-item">
+          </br>
+            <p>"Gracias a Healthstream pude atender mi emergencia dental rápidamente y desde casa."</p>
+            <cite>- Juan Pérez</cite>
+          </div>
+          <div class="videoreviews">
+            <div class="video-container">
+              <video width="320" height="240" alt="Yo la verdad es que visité Webcura un día por curiosidad porque tenía un problema a la hora de expulsar excrementos y desde entonces no tengo almorranas, ¡muy recomendada!" controls>
+                <source src="./resource/video/videoreviews/carabante.mp4" type="video/mp4" />
+                
+              </video>
+            </div>
+            <div class="video-container">
+              <video width="320" height="240" alt="Webcura, me ha curado" controls>
+                <source src="./resource/video/videoreviews/diego.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-container">
+              <video width="320" height="240" alt="Bueno, desde que fui a WebCura sé andar completamente. Antes tenía problemas de andar, pero ahora sé andar completamente , mira. (Simula sonidos de dar pasos)" controls>
+                <source src="./resource/video/videoreviews/pablo.mp4" type="video/mp4" />
+                Tu navegador no soporta elementos de video.
+              </video>
+            </div>
+            <!-- Repite para los otros dos videos -->
+          </div>
+        </section>
+        <section class="final-cta">
+          <h2>Empieza tu Viaje hacia una Mejor Salud Hoy</h2>
+          </br>
+          <a href="./registro.html" class="btn btn-primary">Únete Ahora</a>
+        </section>
+      </main>
+    </main>
+    <footer>
+      <p>&copy; 2024 Portal de Salud. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/modoOscuro.js"></script>
+    <script src="./js/burger.js"></script>
+    <script>
+      document.getElementById("enter-btn").addEventListener("click", function () {
+        var welcomeScreen = document.getElementById("welcome-screen");
+        var mainContent = document.querySelector(".main-content");
+
+        // Desvanece la pantalla de bienvenida
+        welcomeScreen.style.opacity = "0";
+
+        // Espera a que termine la transición para ocultar completamente y mostrar el contenido principal
+        setTimeout(function () {
+          welcomeScreen.style.display = "none";
+          mainContent.style.display = "block";
+        }, 1000); // Asegúrate de que este tiempo coincida con la duración de la transición CSS
+      });
+      let slideIndex = 1;
+      // showSlides(slideIndex);
+
+      // // Función para controlar los botones next/prev
+      // function plusSlides(n) {
+      //   showSlides((slideIndex += n));
+      // }
+
+      // Función para mostrar el slide actual
+
+      // function showSlides(n) {
+      //   let i;
+      //   let slides = document.getElementsByClassName("carrusel-item");
+      //   if (n > slides.length) {
+      //     slideIndex = 1;
+      //   }
+      //   if (n < 1) {
+      //     slideIndex = slides.length;
+      //   }
+      //   for (i = 0; i < slides.length; i++) {
+      //     slides[i].style.display = "none";
+      //   }
+      //   slides[slideIndex - 1].style.display = "block";
+      // }
+      let carrusel = document.getElementsByClassName("carrusel-item")
+      document.getElementById("prev").addEventListener("click", () => {
+        
+        for(let i = 0; i < carrusel.length; i++){
+            if(carrusel[i].classList.contains("active")){
+              
+                carrusel[i].classList.remove("active");
+                if(i-1 < 0){
+                  i = carrusel.length-1;
+                  carrusel[i].classList.add("active")
+                }else{
+                  carrusel[i-1].classList.add("active")
+                }
+              
+            }
+        }
+      })
+
+      document.getElementById("next").addEventListener("click", () => {
+        for(let i = 0; i < carrusel.length; i++){
+            if(carrusel[i].classList.contains("active")){
+                carrusel[i].classList.remove("active");
+                if(i+1 >= carrusel.length){
+                  i = 0;
+                  carrusel[i].classList.add("active")
+                  
+                }else{
+                  i++;
+                  carrusel[i].classList.add("active")
+                }
+              
+            }
+        }
+      })
+
+      // Agregar event listeners a los botones
+      // document.querySelector(".next").addEventListener("click", function () {
+      //   plusSlides(1);
+      // });
+
+      // document.querySelector(".prev").addEventListener("click", function () {
+      //   plusSlides(-1);
+      // });
+    </script>
+  </body>
+</html>

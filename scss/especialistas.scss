@@ -1,0 +1,57 @@
+.especialistas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-gap: 70px; /* Espacio entre las tarjetas */
+  padding: 70px;
+}
+
+.especialista-card {
+  background-color: #e9e9e9; /* Fondo blanco para las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Centrar el texto */
+  padding: 15px;
+  .estrella {
+    color: #ffc107; // Color dorado para las estrellas llenas
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .estrella-gris {
+    color: #e4e5e9; // Color gris para las estrellas vacías
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+.especialista-img {
+  width: 250px; /* Ajusta la imagen a la anchura de la tarjeta */
+  height: 250px; /* Mantiene la proporción de la imagen */
+  border-radius: 50%; /* Hace la imagen circular */
+}
+
+.especialista-nombre,
+.especialista-especialidad {
+  font-size: 25px;
+  color: black;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+.ratings {
+  display: flex; /* Esto alineará las estrellas horizontalmente */
+  justify-content: center; /* Esto centrará las estrellas si la cantidad es menor que el ancho máximo del contenedor */
+}
+@media only screen and (max-width: 619px) {
+  .especialistas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 columna */
+    grid-gap: 70px; /* Espacio entre las tarjetas */
+    padding: 70px;
+  }
+}
+@media only screen and (min-width: 620px) and (max-width: 883px) {
+  .especialistas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columna */
+    grid-gap: 70px; /* Espacio entre las tarjetas */
+    padding: 70px;
+  }
+}

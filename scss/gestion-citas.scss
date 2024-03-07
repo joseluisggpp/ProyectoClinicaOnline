@@ -1,0 +1,107 @@
+@import "variables.scss";
+
+.appointment-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.appointment-intro,
+.book-appointment,
+.view-appointments,
+.modify-appointment {
+  margin-bottom: 30px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+label {
+  color: black;
+}
+p {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: black;
+
+  strong {
+    color: $color-primary;
+  }
+}
+.appointments-list {
+  .appointment-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h3 {
+      color: $color-primary;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+      color: black;
+
+      strong {
+        color: $color-primary;
+      }
+    }
+
+    .btn {
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+
+      &.btn-secondary {
+        background-color: #ffc107; // Color amarillo para el botón Modificar
+        &:hover {
+          background-color: darken(#ffc107, 10%);
+        }
+      }
+
+      &.btn-danger {
+        background-color: #dc3545; // Color rojo para el botón Cancelar
+        &:hover {
+          background-color: darken(#dc3545, 10%);
+        }
+      }
+    }
+  }
+}

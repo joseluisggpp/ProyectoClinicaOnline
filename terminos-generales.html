@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos y Condiciones</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/webp" href="./resource/img/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <!-- Pulsar el logo redirige al index.html -->
+      <a href="index.html" class="logo-link">
+        <img class="logo-img" alt="Healthstream" src="./resource/img/logoRecorteCircular.png" />
+      </a>
+      <div class="mobile-nav">
+        <button id="showBurger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="-5 -5 60 60"
+            fill="white"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            ></path>
+          </svg>
+        </button>
+        <div id="items-burger" class="mobile-nav-items">
+          <button id="closeBurger">
+            <svg
+              fill="#FFFFFF"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+              ></path>
+            </svg>
+          </button>
+          <ul>
+            <li><a href="./especialistas.html">Especialistas</a></li>
+            <li><a href="./especialidades.html">Especialidades</a></li>
+            <li><a href="./gestion-citas.html">Gestión de Citas</a></li>
+            <li><a href="./sala-videollamada.html">Sala de Videollamada</a></li>
+            <li><a href="./terminos-generales.html">Términos Generales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-header">
+        <!-- Botón de Modo Oscuro -->
+        <button id="dark-mode-toggle" class="btn btn-primary">Modo Oscuro</button>
+        <div class="search-box">
+          <input type="search" placeholder="Buscar..." />
+          <button class="btn btn-primary">Buscar</button>
+        </div>
+        <div>
+          <a href="login.html" class="href">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Botón de inicio de sesión omitido en la página de registro -->
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="./especialistas.html">Especialistas</a></li>
+        <li><a href="./especialidades.html">Especialidades</a></li>
+        <li><a href="./gestion-citas.html">Gestión de Citas</a></li>
+        <li><a href="./sala-videollamada.html">Sala de Videollamada</a></li>
+        <li><a href="./terminos-generales.html">Términos Generales</a></li>
+      </ul>
+    </nav>
+
+    <main class="terms-content">
+      <h1>Términos y Condiciones Generales</h1>
+      <p>Fecha de efectividad: 5 de marzo de 2024</p>
+
+      <section>
+        <h2>1. Aceptación de los Términos</h2>
+        <p>
+          Al utilizar los servicios ofrecidos por la clínica online Healthstream, usted acepta estar sujeto a estos
+          términos y condiciones.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Cambios y Actualizaciones</h2>
+        <p>
+          Nos reservamos el derecho a modificar estos términos en cualquier momento. Es su responsabilidad revisarlos
+          regularmente.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Acceso y Uso del Servicio</h2>
+        <p>
+          Para acceder a nuestros servicios, puede que se requiera que se registre y cree una cuenta con información
+          personal.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Privacidad</h2>
+        <p>
+          Su privacidad es importante para nosotros. Por favor, revise nuestra Política de Privacidad que también rige
+          su uso de los Servicios.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Comunicaciones Electrónicas</h2>
+        <p>Al utilizar nuestros servicios, usted consiente en recibir comunicaciones electrónicas de nuestra parte.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Portal de Salud. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+  <script src="./js/modoOscuro.js"></script>
+  <script src="./js/burger.js"></script>
+</html>

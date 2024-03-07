@@ -1,0 +1,56 @@
+@import "variables.scss";
+.videocall-screen {
+  background-color: black;
+  width: 100%;
+  height: 60vh; /* Ajusta a tus necesidades */
+  position: relative;
+}
+
+.call-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+.icono-llamar,
+.icono-colgar {
+  width: 90px;
+  height: 90px;
+}
+.btn-call,
+.btn-hangup {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-box {
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 20vh; /* Ajusta a tus necesidades */
+}
+
+.messages {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+input[type="text"] {
+  width: calc(100% - 60px);
+  padding: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-send {
+  width: 50px;
+  height: 30px; /* Asegúrate de que coincida con la altura del input de texto */
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

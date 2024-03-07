@@ -1,0 +1,13 @@
+// Variables
+$color-primary: #2196f3;
+$color-secondary: #6c757d;
+$font-stack: "system-ui", sans-serif;
+$breakpoint-md: 768px; // Tablet
+$breakpoint-lg: 1024px; // Desktop
+
+@mixin transition($transitions) {
+  -webkit-transition: $transitions;
+  -moz-transition: $transitions;
+  -o-transition: $transitions;
+  transition: $transitions;
+}

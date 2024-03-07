@@ -1,0 +1,241 @@
+@charset "UTF-8";
+.welcome-screen {
+  position: fixed; /* Posición fija para que cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ancho de toda la ventana gráfica */
+  height: 100vh; /* Altura de toda la ventana gráfica */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* Efecto de desenfoque para el fondo */
+  transition: opacity 1s ease-in-out; /* Transición suave para el efecto de desvanecimiento */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  background-image: url("../resource/img/logo.webp"); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen de fondo cubra toda el área disponible */
+  background-position: center; /* Centra la imagen de fondo */
+}
+.welcome-screen .welcome-content {
+  text-align: center;
+  color: #fff;
+}
+.welcome-screen .welcome-content h1 {
+  margin-bottom: 20px;
+}
+.welcome-screen .welcome-content #welcome-audio {
+  margin-bottom: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: none; /* Oculta el contenido principal inicialmente */
+}
+
+.carrusel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.active {
+  display: block !important;
+}
+
+.carrusel-item {
+  animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  display: none; /* Oculta todos los elementos por defecto */
+  width: 100%;
+  height: 500px; /* Ajusta según sea necesario */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.carrusel-item img {
+  background-attachment: fixed;
+}
+
+.carrusel-text {
+  position: absolute;
+  bottom: 20px; /* Ajusta según sea necesario */
+  left: 20px; /* Ajusta según sea necesario */
+  color: white;
+  font-size: 24px; /* Ajusta según sea necesario */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Pantalla de Bienvenida */
+.welcome-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 175, 190, 0.9);
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.welcome-content h1,
+.welcome-content button {
+  margin: 20px 0;
+}
+
+/* Contenido Principal */
+.main-content {
+  display: none;
+  padding: 20px;
+}
+
+/* Especialidades */
+.specialties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.specialty-item {
+  background: #0096c7;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Especialistas */
+.our-specialists {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Testimonios */
+.testimonials {
+  background: #97c6ea;
+  padding: 20px;
+  text-align: center;
+}
+
+.final-cta {
+  background: #a6d5fa;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.final-cta a {
+  background: #023047;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.specialist-profiles {
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.ratings {
+  display: flex; /* Esto alineará las estrellas horizontalmente */
+  justify-content: center; /* Esto centrará las estrellas si la cantidad es menor que el ancho máximo del contenedor */
+}
+
+.especialista-img {
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  height: 150px; /* Ajusta el tamaño de la imagen */
+  border-radius: 50%; /* Hace la imagen redonda */
+  -o-object-fit: cover;
+     object-fit: cover; /* Asegura que la imagen cubra el área sin perder su proporción */
+  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.estrella {
+  color: #ffc107; /* Color de las estrellas (amarillo) */
+  margin: 0 2px; /* Espacio entre las estrellas */
+}
+
+.estrella-gris {
+  color: grey !important;
+  /* Color de las estrellas no llenas (gris claro) */
+}
+
+.videoreviews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.videoreviews .video-container {
+  padding: 0 10px;
+}
+.videoreviews .video-container video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 672px) {
+  .videoreviews {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 70px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=home.css.map */
